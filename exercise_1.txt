@@ -1,0 +1,36 @@
+-- POLICY --
+CustomerID | PolicyID
+1111 | 0001
+1112 | 0002
+1113 | 0003
+
+-- PREMIUM --
+Term | PolicyID | PremiumAmount
+2020 | 0002 | 33.5
+2020 | 0003 | 20
+2021 | 0001 | 30.5
+2021 | 0002 | 44.5
+2021 | 0003 | 21
+
+-- CUSTOMER --
+CreateDate | CustomerID | Name | Zip
+10/10/2021 | 1111 | John | 40001
+12/10/2021 | 1111 | Jon | 40001
+11/22/2021 | 1112 | Brian | 45333
+01/13/2022 | 1113 | Aaron | 60443
+02/05/2022 | 1112 | Brian | 20034
+
+
+1) What is the total premium for the year 2021?
+2) What is the premium that customerID 1112 paid in 2021?
+3) What is the latest Name for each customer?
+4) Can you add the customer's latest Name to the output in (2)?
+
+EXTRA: Create a column for the PREMIUM table that for each record shows its percentage of the total premium for that year
+
+Term | PolicyID | PremiumAmount | Ptg
+2020 | 0002 | 33.5 | 0.626
+2020 | 0003 | 20 | 0.374
+2021 | 0001 | 30.5 | 0.318
+2021 | 0002 | 44.5 | 0.464
+2021 | 0003 | 21 | 0.219
